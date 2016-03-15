@@ -1,0 +1,12 @@
+.staff-member { border: 1px solid #000;
+width: 48%;
+padding: 10px;
+margin-bottom: 10px;
+height: 290px;
+float: left;
+margin-right: 10px;
+}
+.staff-member-photo { float: left;
+margin-right: 10px;
+max-height: 270px;
+ }

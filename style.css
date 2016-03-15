@@ -1,0 +1,952 @@
+/*
+Theme Name: We Can Ride 2013
+Theme URI:
+Author: Elise Ferguson
+Author URI: saturdaynightbattleship.com
+Description: This is a custom theme created for We Can Ride, Inc
+Version: 1.0
+*/
+
+/*! normalize.css v1.0.0 | MIT License | git.io/normalize */article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden] {
+  display: none;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0 0;
+}
+h5 {
+  font-size: .83em;
+  margin: 1.67em 0;
+}
+h6 {
+  font-size: .75em;
+  margin: 2.33em 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+blockquote {
+  margin: 1em 40px;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000000;
+}
+p,
+pre {
+  margin: 1em 0;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace,serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+q {
+  quotes: none;
+}
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+small {
+  font-size: 75%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+dd {
+  margin: 0 0 0 40px;
+}
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+form {
+  margin: 0;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.printElement {
+  display: none;
+}
+.offscreen {
+  text-indent: -9999em;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: block;
+  overflow: hidden;
+  list-style: none;
+}
+.offscreen br {
+  display: none;
+}
+.clearfix:before {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.mceContentBody {
+  background: #F7F7F7;
+}
+.smallText {
+  font-size: .9em;
+}
+.rounded-top {
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+}
+.openSans {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.openSansSemi {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.openSansBold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+/* apply a natural box layout model to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* =============================================================================
+   Base Styles
+   This section includes links, headers, etc...
+   ========================================================================== */
+html {
+  height: 100%;
+  color: #666666;
+}
+a {
+  color: #993300;
+}
+a:hover,
+a:focus {
+  color: #666;
+}
+/* =============================================================================
+	Default Styles
+	These styles will be in all media queries
+   ========================================================================== */
+body.design {
+  background: #2b1408 url(images/wood-background-grad.jpg) top repeat-x;
+}
+.container-page {
+
+
+  max-width: 978px;
+  margin: 100px auto 0;
+  padding-bottom: 175px;
+}
+.header-page {
+  min-height: 218px;
+  background: #000000;
+  /* Old browsers */
+
+  /*background: -moz-linear-gradient(top, #990000 0%, #000000 98%);
+   FF3.6+ */
+
+  /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #990000), color-stop(98%, #000000));
+  Chrome,Safari4+ */
+
+  /*background: -webkit-linear-gradient(top, #990000 0%, #000000 98%);
+   Chrome10+,Safari5.1+ */
+
+  /*background: -o-linear-gradient(top, #990000 0%, #000000 98%);
+   Opera 11.10+ */
+
+  /*background: -ms-linear-gradient(top, #990000 0%, #000000 98%);
+   IE10+ */
+
+  /*background: linear-gradient(to bottom, #990000 0%, #000000 98%);
+   W3C */
+
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#000000', GradientType=0);
+   IE6-9 */
+
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+}
+.brand {
+  background: url(/wp-content/uploads/2014/01/WCR-Est-Logo-REVsm.jpg) no-repeat;
+  float: left;
+  height: 176px;
+  width: 233px;
+  margin-top: 8px;
+  margin-left: 75px;
+}
+.container-header {
+  min-height: 207px;
+  float: right;
+  margin-top: -23px;
+  margin-right: 30px;
+  width: 615px;
+  background: #333;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(top, #333333 0%, #333333 98%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333333), color-stop(98%, #333333));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #333333 0%, #333333 98%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #333333 0%, #333333 98%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #333333 0%, #333333 98%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #333333 0%, #333333 98%);
+  /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#333333', GradientType=0);
+  /* IE6-9 */
+
+  -webkit-box-shadow: 1px 1px 20px 1px #000000;
+  box-shadow: 1px 1px 20px 1px #000000;
+}
+* {
+  box-sizing: border-box;
+}
+.btn-nav-main,
+.nav-mbl {
+  display: none;
+}
+.nav-main {
+  margin: 0 auto;
+  font-size: 18px;
+}
+.nav-main ul,
+.nav-main ol {
+  padding: 0;
+  margin: 0 0 1.5em;
+  list-style: none;
+}
+.nav-main > ul {
+  display: table;
+  width: 100%;
+  margin: 0;
+}
+.nav-main > ul > li {
+  display: table-cell;
+  position: relative;
+}
+.nav-main > ul > li > a {
+  display: block;
+  background: #000;
+  text-decoration: none;
+  text-align: center;
+  color: #900;
+  height: 40px;
+  padding: 10px 0.5em 0;
+}
+.nav-main > ul > li > a:hover,
+.nav-main > ul > li > a.current {
+  background: #900;
+  color: #fff;
+}
+.nav-main > ul > li:hover ul {
+  display: block;
+}
+.nav-main.cascadingMenu ul ul {
+  display: none;
+  position: absolute;
+  background: #000;
+  z-index: 5;
+  width: 250px;
+}
+.nav-main.cascadingMenu ul ul li {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: block;
+  position: relative;
+}
+.nav-main.cascadingMenu ul ul li a {
+  display: block;
+  padding: 5px 10px;
+  color: #900;
+  font-size: 0.9em;
+  text-decoration: none;
+  text-transform: none;
+}
+.nav-main.cascadingMenu ul ul li a:hover {
+  color: #fff;
+  background: #900;
+}
+.nav-main.cascadingMenu ul ul li.hasChild ul {
+  display: none;
+}
+.nav-main.cascadingMenu ul ul li.hasChild:hover ul {
+  display: block;
+  left: 250px;
+  top: 0;
+  z-index: 2;
+}
+.call-out {
+  color: #fff;
+  padding: 35px 20px 15px 54px;
+  font-size: 20px;
+}
+.social-media {
+  clear: both;
+  float: right;
+  margin: -160px -42px 0 0;
+}
+.social-media ul {
+  margin: 0;
+  padding: 0;
+}
+.social-media li {
+  list-style: none;
+}
+.social-media li a {
+  -webkit-box-shadow: 1px 1px 20px 1px #000000;
+  box-shadow: 1px 1px 20px 1px #000000;
+  margin: 0 0 5px 0;
+  height: 54px;
+  width: 42px;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -ms-border-radius: 0 5px 5px 0;
+  -o-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+}
+.social-media li a:hover {
+  -webkit-box-shadow: 1px 1px 20px 1px #993300;
+  box-shadow: 1px 1px 20px 1px #993300;
+}
+.facebook {
+  background: #e0dede url(images/facebook.png) 7px 10px no-repeat;
+}
+.rss {
+  background: #dfdddd url(images/rss.png) 0 9px no-repeat;
+}
+.twitter {
+  background: #e6e4e4 url(images/twitter.png) 1px 8px no-repeat;
+}
+.photo-slider {
+  clear: both;
+  height: 174px;
+}
+
+.slider{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  float: left;
+  color: #333333;
+  background: #e5dedd;
+  padding-bottom: 0;
+  width: 978px;
+  padding-right: 30px;
+}
+.slider h3 {
+  margin: 10px 0 0 15px;
+  padding: 0;
+  font-style: italic;
+}
+li.shs-slide ul { margin: 0; padding: 0; }
+li.shs-slide ul li {
+  display: inline;
+  width: 49%;
+  float: left;
+  padding-left: 30px;
+}
+li.shs-slide ul li h2 { margin: 0; font-size: 18px; }
+li.shs-slide ul li span {
+  float: left;
+  width: 66px;
+  height: 120px;
+  margin-right: 25px;
+}
+
+
+li.shs-slide ul li span.informational {
+  background: url(images/info.png) 0 20px no-repeat;
+}
+li.shs-slide ul li span.fundraiser {
+  background: url(images/check.png) 0 20px no-repeat;
+}
+.more-info {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333;
+}
+a.more-info:hover {
+  color: #993300;
+  text-decoration: underline;
+}
+.mobile-only { display: none; }
+.container-columns {
+  clear: both;
+  background: #fff;
+  -webkit-border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  float: left;
+  padding-bottom: 20px;
+}
+.column-main {
+  padding: 34px 35px;
+}
+.content { margin-bottom: 20px; float: left; min-height: 500px; width: 99%; }
+.category-post-content, .post-content {
+	border-bottom: 1px solid #666666;
+	display: block;
+	float: left;
+    	width: 100%;
+      padding-bottom: 15px;
+}
+.category-post-content h6, .post-content h6 { margin: 0; padding: 0; font-style: italic; font-weight: normal; }
+.read-more { font-size: 12px; font-style: italic; }
+a.feed {
+  margin: 0 0 0 3px;
+  font-size: 11px;
+  padding: 7px 0 7px 35px;
+  background: url("http://wecanride.org/wp-content/uploads/2013/11/feed.png") no-repeat 0 50%;
+}
+.call-out-tab {
+  -webkit-box-shadow: 8px 1px 21px 1px #000;
+  box-shadow: 12px 1px 21px 1px #000;
+  margin: 10px -185px 0 0;
+  float: right;
+  width: 150px;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -ms-border-radius: 0 5px 5px 0;
+  -o-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+  background: #e0dede;
+  padding: 5px 10px 15px;
+}
+.facebook-plugin {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.logos {
+
+  float: left;
+  width: 600px;
+}
+.logos ul {
+  margin: 0;
+  padding: 0;
+}
+.logos li {
+  list-style: none;
+  display: inline;
+}
+.logos li a {
+  float: left;
+}
+#nav_menu-2 { float: right; width: 150px; margin: 0; padding: 0; }
+#nav_menu-2 h2 { margin: 0 0 10px 0; }
+.path {
+  background: url(images/path-intl.png) no-repeat;
+  height: 149px;
+  width: 184px;
+}
+.smart-givers {
+  background: url(images/smart-givers.png) no-repeat;
+  height: 149px;
+  width: 200px;
+}
+.contact-information{
+  float: right;
+  width: 250px;
+}
+.contact-information h2 { margin: 0; }
+.contact-information ul { list-style: none; margin: 0; padding: 0; }
+.footer-page {
+  clear: both;
+  width: 978px;
+  margin: 0 auto;
+  zoom: 1;
+  text-align: center;
+}
+.footer-page:before {
+  content: "";
+  display: table;
+}
+.footer-page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.copyright {
+  padding: 10px 0;
+  color: #666666;
+}
+
+
+/* constant contact short form*/
+.constant-contact-signup { font-size: 12px; margin-left: 30px; float: left; }
+.constant-contact-signup h2 { display: none; padding: 0; margin: 0; }
+.constant-contact-signup p { font-weight: bold; }
+
+/*share buttons*/
+
+
+
+@media only screen and (max-width: 957px) {
+  .nav-main > ul > li a {
+    padding: 10px 1.6em 0;
+  }
+}
+
+@media only screen and (max-width: 833px) {
+  .nav-main > ul > li a {
+    padding: 10px 1.1em 0;
+  }
+}
+/* =============================================================================
+   748px and Up
+   These styles take affect at devices with widths greater or equal to 748px.
+   ========================================================================== */
+@media only screen and (min-width: 748px) {
+  .nav-main {
+    display: block;
+  }
+}
+/* mobile screens */
+@media only screen and (max-width: 550px) {
+
+  .header-page { padding-top: 10px; }
+  .nav-mbl {
+    display: block;
+  }
+  .nav-mbl ul {
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-mbl ul li {
+    display: table-cell;
+    vertical-align: top;
+    position: relative;
+  }
+  .nav-mbl ul li a {
+    display: block;
+    height: 45px;
+    background: #e5dedd;
+    text-align: center;
+    text-decoration: none;
+    color: #353827;
+    width: 100%;
+    margin: 0 5px;
+    padding-top: 12px;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .nav-mbl ul li a:hover {
+    top: 1px;
+    left: 1px;
+    text-decoration: underline;
+  }
+  .nav-main {
+    display: none;
+  }
+  .nav-main > ul {
+    background-color: #e0dcbd;
+    margin-left: 5px;
+    width: 100%;
+  }
+  .nav-main ul ul li {
+    display: none!important;
+  }
+  .nav-main.cascadingMenu li {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #bbab6a;
+  }
+  .nav-main.cascadingMenu li:hover {
+    background-color: #b5b190;
+  }
+  .nav-main.cascadingMenu li.itemLast {
+    border: none;
+  }
+  .nav-main.cascadingMenu li a {
+    text-align: left;
+  }
+  .nav-main.cascadingMenu li a:hover {
+    color: #fff;
+  }
+  .facebook-plugin { display: none; }
+}
+/* =============================================================================
+   748px to 977px
+   These styles take affect at devices between widths 748px and 977px.
+   ========================================================================== */
+@media only screen and (min-width: 748px) and (max-width: 977px) {
+
+}
+/* =============================================================================
+   978px and Up
+   These styles take affect at devices with widths greater or equal to 978px.
+   ========================================================================== */
+@media only screen and (min-width: 978px) {
+
+}
+/* =============================================================================
+   320px and Down
+   These styles take affect at devices with widths less than or equal to 320px.
+   ========================================================================== */
+@media only screen and (max-width: 930px) {
+.facebook-plugin { display: none; }
+  .container-page {
+    padding-bottom: 25px;
+    margin-top: 50px;
+  }
+.nav-main > ul {
+     margin: 1px 0 0 5px;
+  }
+  .brand {
+    width: 277px;
+    margin-left: 20px;
+    background-size: 85%;
+    float: none;
+    margin: 0 auto;
+  }
+  .container-header {
+    background: #000;
+    box-shadow: none;
+    width: auto;
+    height: auto;
+    margin-right: 0;
+    padding-right: 30px;
+  }
+  .call-out {
+    color: #fff;
+    padding: 25px 15px 15px;
+  }
+  .social-media {
+    display: none;
+    margin: 0 auto;
+    float: none;
+    width: 160px;
+  }
+  .social-media li a {
+    border-radius: 0;
+    box-shadow: none;
+    float: left;
+    margin: 0 5px;
+  }
+  .photo-slider { display: none; }
+  .mobile-only { display: block; padding: 40px 20px 20px; float: left; }
+  .slider {
+    font-size: 0.75em;
+    width: 100%;
+    height: auto;
+  }
+  #shtmlslider.shs_light ol.shs-markers li a {
+	margin-top: 50px !important;
+  }
+  .slider span {
+    display: none;
+  }
+  .slider li {
+    width: 259px;
+    padding-left: 40px;
+  }
+  li.shs-slide ul li h2 { font-size: 12px; }
+#shtmlslider,
+.shs-slide,
+.shs,
+.shs-wrapper { height: auto !important; }
+
+.slider h3 {
+margin: 10px 0 10px 15px;
+}
+#shtmlslider.shs_light ul.shs-controls li a {
+ right: -10px !important;
+}
+  .call-out-tab {
+    display: none;
+  }
+.container-columns {
+	width: 100%;
+}
+#nav_menu-2 { float: none;  }
+#bit { display: none; }
+.column-main { padding-top: 10px; }
+ .logos {
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .logos ul {  }
+
+  .logos li {
+    float: none;
+  }
+  .logos li a {
+    float: none;
+    margin: 0 auto;
+  }
+.contact-information { float: none; }
+  .footer-page {
+    width: 95%;
+  }
+}
+
+.alignleft { float: left; margin-right: 10px; }
+li.widget { list-style: none; }
+
+ul.epdu_userlist { list-style: none; margin: 0; padding: 0; }
+ul.epdu_userlist li { float: left; padding: 20px 0 0 0; border-top: 1px solid #ccc; margin: 0 0 20px 0; }
+.user-info { clear: left; }
+.user-photo { float: left; margin-right: 10px; }
+.user-info h2 { margin: 0; padding: 0; }
+.user-info p { margin: 0; }
+
+
+ul.epdu_userlist ul li { float: none; padding: 0; border: 0; margin: 0; }
+
+/* Custom style for Donate button in main navigation */
+.donate-now > a {
+    color:#fff !important;
+    background-color: #E51717 !important;
+}
+
+.donate-now > a:hover {
+    background-color: #FF3A3A !important;
+}
+
+.hidden {
+    display:none;
+}
+
+.cta-btn {
+    -webkit-border-radius: 18;
+    -moz-border-radius: 18;
+    border-radius: 18px;
+    -webkit-box-shadow: 0px 1px 3px #666666;
+    -moz-box-shadow: 0px 1px 3px #666666;
+    box-shadow: 0px 1px 3px #666666;
+    color: #ffffff;
+    background: #660000;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    display:inline-block;
+}
+
+.cta-btn:hover {
+    background: #661809;
+    text-decoration: none;
+    color:#ffffff;
+}
+
+/* Custom Homepage CTA */
+
+.homepage-cta {
+    display:block;
+    width:70%;
+    margin:0px auto;
+    border:1px solid #cccccc;
+    border-left:6px solid #660000;
+    border-right:6px solid #660000;
+    border-radius:15px;
+    padding:5px 30px;
+    background-color:#FDFFFB;
+}
+
+/* Custom styles for razoo widgets */
+
+#razoo_donation_widget {
+    float:right;
+}
